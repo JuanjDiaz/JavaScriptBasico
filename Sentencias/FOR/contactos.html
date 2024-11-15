@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+</head>
+<body>
+    <script>
+        let contactos=prompt("Bienvenido, ingresa cuantos contactos quieres agregar:");
+        let listaNombres=[];
+        let listaNumeros=[];
+        for (let i=0;i<contactos;i++){
+            let nombre=prompt(`Nombre de contacto ${i+1}:`);
+            let numero=prompt(`Número de contacto ${i+1}:`);
+            listaNombres[i]=nombre;
+            listaNumeros[i]=numero;
+        }
+        console.log("Contactos registrados:")
+        for (let j=0;j<contactos;j++){
+            console.log(`-${listaNombres[j]}  ${listaNumeros[j]}`);
+        }
+    </script>
+</body>
+</html>

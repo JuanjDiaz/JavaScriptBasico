@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINE</title>
+</head>
+<body>
+    <script>
+        let edad=prompt("Bienvenido\nIngresa tu edad:");
+        let sugerencia=" ";
+        switch (true){
+            case (edad>0 && edad<7):
+                sugerencia="Zootopia, Grandes Héroes, Buscando a Nemo";
+                console.log(`Las películas recomendadas para ti son: ${sugerencia}`);
+                break;
+            case (edad>=7 && edad<=17):
+                sugerencia="El rey León, Frozen, Shrek";
+                console.log(`Las películas recomendadas para ti son: ${sugerencia}`);
+                break;
+            case (edad>=18 && edad<=30):
+                sugerencia="Deadpool, Avengers, Rápidos y Furiosos";
+                console.log(`Las películas recomendadas para ti son: ${sugerencia}`);
+                break;
+            case (edad>=31):
+                sugerencia="El Padrino, El Pianista, Rocky";
+                console.log(`Las películas recomendadas para ti son: ${sugerencia}`);
+                break;
+            default:
+                console.log("Número inválido, intenta de nuevo");
+        }
+    </script>
+</body>
+</html>

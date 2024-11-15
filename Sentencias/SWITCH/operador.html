@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador seleccionado</title>
+</head>
+<body>
+    <script>
+        let numero1=parseInt(prompt(`Bienvenido\nIngresa el primer número:`));
+        let numero2=parseInt(prompt("Ingresa el segundo número:"));
+        let operacion=prompt("¿Cuál operación quieres realizar? [+,-,*,/]");
+        switch(operacion){
+            case "+":
+                resultado=numero1+numero2;
+                console.log(`El resultado de esta operación es: ${resultado}`);
+                break;
+            case "-":
+                resultado=numero1-numero2;
+                console.log(`El resultado de esta operación es: ${resultado}`);
+                break;
+            case "*":
+                resultado=numero1*numero2;
+                console.log(`El resultado de esta operación es: ${resultado}`);
+                break;
+            case "/":
+                resultado=numero1/numero2;
+                console.log(`El resultado de esta operación es: ${resultado}`);
+                break;
+        }
+    </script>
+</body>
+</html>

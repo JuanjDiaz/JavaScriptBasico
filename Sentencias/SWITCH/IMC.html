@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+        let peso=prompt("Ingresa tu peso en kg: ");
+        let altura=prompt("Ingresa tu altura en metros:");
+        let categoria=" "
+        let imc=peso/altura**2;
+
+        switch (true){
+            case (imc<18.5):
+                categoria="Bajo peso";
+                console.log(`Tu IMC es de ${imc}
+            Tu categoría es: ${categoria}`);
+                break;
+            case (imc<24.9):
+                categoria="Peso normal";
+                console.log(`Tu IMC es de ${imc}
+            Tu categoría es: ${categoria}`);
+                break;
+            case (imc<29.9):
+                categoria="Sobre peso";
+                console.log(`Tu IMC es de ${imc}
+            Tu categoría es: ${categoria}`);
+                break;
+            case (imc>29.90):
+                categoria="Obesidad";
+                console.log(`Tu IMC es de ${imc}
+            Tu categoría es: ${categoria}`);
+                break;
+        }
+    </script>
+</body>
+</html>

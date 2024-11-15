@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumatoria y Promedio</title>
+</head>
+<body>
+    <script>
+        let inicioRango=parseInt(prompt("Indicarás un rango y se calculará la sumatoria y el promedio de los números dentro de él\nIngresa el primer número:"));
+        let finRango=parseInt(prompt("Ingresa el segundo número:"));
+        let rango=0;
+        let x=0;
+        let sumatoria=0;
+        while (inicioRango<=finRango){
+            sumatoria += inicioRango;
+            inicioRango++;
+            rango++;
+        }
+        let promedio=sumatoria/rango;
+        console.log(`La sumatoria de los números dentro del rango indicado es: ${sumatoria}`);
+        console.log(`El promedio de los números dentro del rango indicado es: ${promedio}`);
+    </script>
+</body>
+</html>
