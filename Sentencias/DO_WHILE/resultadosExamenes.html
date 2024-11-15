@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Examenes</title>
+</head>
+<body>
+    <script>
+        let resultadoExamen=0;
+        let sumaResultados=0;
+        let confirmar=" ";
+        let x=0;
+        do{
+            resultadoExamen=parseFloat(prompt("Ingresa el resultado del exámen:"));
+            sumaResultados+=resultadoExamen;
+            confirmar=prompt("Deseas ingresar otro resultado?");
+            x++;
+        }while(confirmar=="si" || confirmar=="Si" || confirmar=="SI");
+        let promedio=sumaResultados/x;
+        let aprobar=" ";
+        if (promedio>=7){
+            aprobar="APROBADO";
+        }else{
+            aprobar="DESAPROBADO";
+        }
+        console.log(`El promedio de tus exámenes fue de ${promedio}
+        Fuiste ${aprobar}`);
+    </script>
+</body>
+</html>

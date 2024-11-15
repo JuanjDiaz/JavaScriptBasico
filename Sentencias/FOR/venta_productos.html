@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venta de productos</title>
+</head>
+<body>
+    <script>
+        let ventas=prompt("Ingresa cuántas ventas deseas realizar");
+        let i=0;
+        let nombreProducto=" ";
+        let precio=0;
+        let cantidadVendida=0;
+        let listaNombreProducto=[];
+        let listaPrecio=[];
+        let listaCantidadVendida=[];
+        for (i;i<ventas;i++){
+            nombreProducto=prompt("Ingresa el nombre del producto");
+            precio=prompt("Ingresa el precio del producto:");
+            cantidadVendida=prompt("Cantidad vendida:");
+            listaNombreProducto[i]=nombreProducto;
+            listaPrecio[i]=precio;
+            listaCantidadVendida[i]=cantidadVendida;
+        }
+
+        let j=0;
+        console.log("El resumen de las ventas es el siguiente:");
+        for (j;j<ventas;j++){
+            console.log(`Venta ${j+1}:\nProducto=${listaNombreProducto[j]}, Precio=${listaPrecio[j]}, Cantidad Vendida=${listaCantidadVendida[j]}\n`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroUsuario=prompt("Bienvenido.\nDebes intentar adivinar el número del 1 al 100.");
+        let numeroCorrecto=Math.floor(Math.random()*100)+1;
+        while (numeroUsuario!=numeroCorrecto){
+            if (numeroUsuario>numeroCorrecto){
+                numeroUsuario=prompt("Número incorrecto. El número correcto es MENOR al que ingresaste. Intenta nuevamente.");
+            }else{
+                numeroUsuario=prompt("Número incorrecto. El número correcto es MAYOR al que ingresaste. Intenta nuevamente.");
+            }
+        }
+        console.log(`Acertaste. El número ${numeroCorrecto} es el correcto. Felicidades :)`);
+    </script>
+</body>
+</html>

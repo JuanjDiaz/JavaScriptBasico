@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresora</title>
+</head>
+<body>
+    <script>
+        let hojas=50;
+        let impresiones=parseInt(prompt(`La cantidad de hojas para imprimir son ${hojas}.\nIngresa la cantidad de páginas que desea imprimir:`));
+        if (impresiones>hojas){
+            console.log("No hay papel suficiente")
+        }else{
+            while (impresiones<=hojas){
+                console.log(`Se han impreso ${impresiones} hojas`);
+                hojas-=impresiones;
+                impresiones=parseInt(prompt("¿Cuántas hojas más deseas imprimir?"));
+            }
+            console.log("Se ha acabado el papel");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ascensor</title>
+</head>
+<body>
+    <script>
+        let peso=parseInt(prompt("Bienvenido, el límite de peso del ascensor es de 80 kg\nIngresa tu peso:"));
+        let piso=parseInt(prompt("Ingresa el piso al que deseas dirigirte:"));
+        if (peso>80){
+            console.log("El ascensor está sobrecargado. No es posible realizar la acción.")
+        }else if(peso<1){
+            console.log("Peso inválido, digite un valor real.")
+        }else{
+            console.log("Peso permitido. El ascensor se dirige al piso "+piso+".")
+        }
+    </script>
+</body>
+</html>

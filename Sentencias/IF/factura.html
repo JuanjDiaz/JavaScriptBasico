@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTURA</title>
+</head>
+<body>
+    <script>
+        let nombreCliente=prompt("Bienvenido, ingresa tu nombre:");
+        let producto=prompt("Ingresa el nombre de producto que deseas comprar:");
+        let cantidadProducto=prompt("Cantidad de unidades que deseas del producto:");
+        let precioUnitario=prompt("Precio del producto:");
+        let estudiante=prompt("¿Es estudiante? [si/no]:");
+        let tipoCliente=prompt("Ingresa tu categoría (A,B,C,D):");
+
+        let subtotal=cantidadProducto*precioUnitario;
+        let impuesto=0;
+        if (estudiante=="si" || estudiante=="SI" || estudiante=="Si"){
+            impuesto=subtotal*0.05;
+        }else if(estudiante=="no" || estudiante=="NO" || estudiante=="No"){
+            impuesto=subtotal*0.13;
+        }else{
+            console.log("Respuesta de estudiante inválida. Ingresa una respuesta correcta");
+        }
+
+        let total=subtotal+impuesto;
+
+        console.log(`
+        *FACTURA GENERADA*
+        Para el(la) señor(a): ${nombreCliente}
+        quien es cliente tipo: ${tipoCliente}
+        Fue vendido el producto: ${producto}.
+        Cantidad: ${cantidadProducto}
+        Precio unitario: ${precioUnitario}
+        
+        Subtotal: ${subtotal}
+        Impuesto aplicado: ${impuesto}
+        
+        Total a pagar: ${total}`);
+    </script>
+</body>
+</html>

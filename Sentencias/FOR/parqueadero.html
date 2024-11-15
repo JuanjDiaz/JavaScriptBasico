@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parqueadero</title>
+</head>
+<body>
+    <script>
+        let cantidadVehiculos=prompt("Digita la cantidad de vehículos que ingresarán al parqueadero");
+        let datosPlaca=[];
+        let datosHora=[];
+        for ( let i=0;i<cantidadVehiculos;i++){
+            let placa=prompt(`Ingresa la placa del carro ${i+1}:`);
+            let hora_ingreso=prompt("Ingresa la hora de ingreso:");
+            datosPlaca[i]=placa;
+            datosHora[i]=hora_ingreso;
+        }
+        console.log("Resumen de vehículos ingresados:")
+        let j=0;
+        for (let j=0;j<cantidadVehiculos;j++){
+            console.log(`Vehículo ${j+1}: 
+        Placa: ${datosPlaca[j]}, Hora de ingreso: ${datosHora[j]}
+        `);
+        }
+    </script>
+</body>
+</html>
